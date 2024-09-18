@@ -3,12 +3,18 @@ import React from 'react'
 import './Card.css'
 
 export default function Card(props) {
+    const colors = ['#b06e0c', '#FF5733', '#33FF57', '#3357FF', '#FF33A8', '#33FFF3']; // 6 colors
+
+  // Function to randomly pick a color
+  const getRandomColor = () => {
+    return colors[Math.floor(Math.random() * colors.length)];
+  };
   return (
     <>
         <div className="card-container">
             <div className="card-id-wrapper">
                 <div className="card-id">{props.cardDetails.id}</div>
-                <div className="card-profile">
+                <div className="card-profile" style={{ backgroundColor: getRandomColor() }}>
                     <div className="card-profile-initial">{props.cardDetails.userObj.name[0]}{props.cardDetails.userObj.name[1]}</div>
                     <div className={props.cardDetails.userObj.available ?"card-profile-initial-available card-profile-initial-available-true" : "card-profile-initial-available"}></div>
                 </div>

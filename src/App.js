@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './App.css';
 
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Header/Navbar'
 import List from './components/List/List'
 
 

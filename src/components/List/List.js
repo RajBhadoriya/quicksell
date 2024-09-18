@@ -6,6 +6,7 @@ import Card from '../Card/Card'
 let cardCount = 0;
 
 export default function List(props) {
+    console.log(props)
   return (
     <>
         <div className="list-container">
