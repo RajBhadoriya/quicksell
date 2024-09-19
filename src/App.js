@@ -4,7 +4,7 @@ import axios from 'axios';
 import './App.css';
 
 import Navbar from './components/Header/Navbar'
-import List from './components/List/List'
+import List from './components/Column/List'
 
 
 
